@@ -1,0 +1,28 @@
+{
+  "name": "touraxis-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Nik Spyratos",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-jsdoc-swagger": "^1.8.0",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "overrides": {
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "sequelize-cli": "^6.6.2",
+    "supertest": "^7.0.0"
+  }
+}

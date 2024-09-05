@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development
+      - DB_PATH=/usr/src/app/data/database.sqlite
+    command: sh -c "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all && node index.js"
+
+volumes:
+  node_modules:
